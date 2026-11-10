@@ -1,0 +1,41 @@
+{
+  "evidence": [
+    {
+      "id": "demo1",
+      "text": "Conducted five interviews for a student prototype.",
+      "source": "Synthetic project notes"
+    },
+    {
+      "id": "demo2",
+      "text": "Built a simple spreadsheet dashboard.",
+      "source": "Synthetic portfolio"
+    }
+  ],
+  "requirements": [
+    {
+      "label": "User research",
+      "weight": 3,
+      "assessment": "supported",
+      "evidence_ids": [
+        "demo1"
+      ],
+      "hard": false
+    },
+    {
+      "label": "Analytical tools",
+      "weight": 2,
+      "assessment": "partial",
+      "evidence_ids": [
+        "demo2"
+      ],
+      "hard": false
+    },
+    {
+      "label": "Work authorization",
+      "weight": 1,
+      "assessment": "unknown",
+      "evidence_ids": [],
+      "hard": true
+    }
+  ]
+}

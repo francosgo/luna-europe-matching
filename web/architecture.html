@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Inside luna.europe</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">luna<span>.europe</span></a>
+      <nav>
+        <a href="/">← Review workspace</a
+        ><span class="pill">OPEN ARCHITECTURE · v0.1</span>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">1 CODE, 1000 PICTURES, OR STORIES</p>
+          <h1>From evidence<br /><em>to a human decision.</em></h1>
+          <p class="intro">
+            A rotatable 3D process diagram. Click a layer to see what runs,
+            where it runs, and why.
+          </p>
+        </div>
+      </section>
+      <div class="controls">
+        <label
+          >Rotate<input
+            type="range"
+            id="rotation"
+            min="-65"
+            max="35"
+            value="-28" /></label
+        ><label
+          >Tilt<input type="range" id="tilt" min="0" max="65" value="52"
+        /></label>
+      </div>
+      <section class="scene">
+        <div class="layers" id="layers">
+          <button class="layer" data-layer="0" style="--z: 70px">
+            01 · Evidence & sources → structured requirements</button
+          ><button class="layer" data-layer="1" style="--z: 35px">
+            02 · Explicit assessment → inspectable match score</button
+          ><button class="layer" data-layer="2" style="--z: 0px">
+            03 · Draft → change → approve → local memory
+          </button>
+        </div>
+      </section>
+      <section class="lab">
+        <h2 id="layer-title">Evidence stays with its source</h2>
+        <p id="layer-info">
+          Private documents and employer listings inform explicit requirements.
+          Source conflicts are surfaced for review. Browsing is performed by
+          your research agent; the local app does not autonomously crawl job
+          boards.
+        </p>
+      </section>
+      <section class="lab">
+        <p class="eyebrow">THE MATHEMATICS YOU CAN CHANGE</p>
+        <h2>What does y = wx + b mean here?</h2>
+        <p>
+          Each x is an evidence assessment from 0 to 1. Each w is the importance
+          of that requirement. The intercept b is zero. This version uses a
+          transparent rubric, not trained neural weights.
+        </p>
+        <p class="equation" id="equation"></p>
+        <div class="controls">
+          <label
+            >Research evidence x₁<input
+              id="x1"
+              type="range"
+              min="0"
+              max="1"
+              step="0.5"
+              value="1" /></label
+          ><label
+            >AI project evidence x₂<input
+              id="x2"
+              type="range"
+              min="0"
+              max="1"
+              step="0.5"
+              value="0.5" /></label
+          ><label
+            >Research importance w₁<input
+              id="w1"
+              type="range"
+              min="1"
+              max="5"
+              step="1"
+              value="3"
+          /></label>
+        </div>
+        <p>
+          Unknown evidence contributes zero to the conservative score. Its
+          possible contribution is shown separately in the API. A mandatory
+          eligibility gap blocks a recommendation regardless of the score.
+        </p>
+      </section>
+      <section class="lab">
+        <h2>A learning loop with boundaries</h2>
+        <p>
+          Private revision history → optional category-only feedback →
+          aggregated evaluation → human-reviewed version → regression tests →
+          release. No automatic retraining, no hidden upload of CVs, and no
+          promise of zero error.
+        </p>
+        <p>
+          University ↔ Industry ↔ Government forms the Triple Helix. Individuals
+          retain decision rights across those relationships. The 17 SDGs supply
+          impact themes; the five IDG dimensions support reflection. PSR and PRR
+          are experimental, voluntary reflection concepts, excluded from hiring
+          scores.
+        </p>
+        <p>
+          Python runs matching and SQLite persistence. Browser
+          HTML/CSS/JavaScript handles review and this 3D diagram. JSON APIs and
+          MCP expose the same scoring function. A separate future billing
+          boundary verifies payment before metered service access.
+        </p>
+      </section>
+      <footer>
+        Readable source: web/architecture.js · luna_match/engine.py ·
+        docs/ARCHITECTURE.md
+      </footer>
+    </main>
+    <script src="/architecture.js"></script>
+  </body>
+</html>

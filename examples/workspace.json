@@ -1,0 +1,60 @@
+{
+  "title": "Synthetic demonstration",
+  "portrait": false,
+  "sidebar": "SYNTHETIC EXAMPLE\n\nReplace with your own profile locally.",
+  "evidence": [
+    {
+      "id": "demo1",
+      "text": "Conducted five interviews for a student prototype.",
+      "source": "Synthetic project notes"
+    },
+    {
+      "id": "demo2",
+      "text": "Built a simple spreadsheet dashboard.",
+      "source": "Synthetic portfolio"
+    }
+  ],
+  "warnings": [
+    "All example people and evidence are fictional. Assessments are illustrative."
+  ],
+  "jobs": [
+    {
+      "id": "example",
+      "company": "Example organisation",
+      "title": "Junior Innovation Analyst",
+      "location": "Example City \u00b7 Hybrid",
+      "category": "Synthetic demo",
+      "url": "https://example.com",
+      "reason": "Illustrates a research match with an unresolved eligibility requirement.",
+      "requirements": [
+        {
+          "label": "User research",
+          "weight": 3,
+          "assessment": "supported",
+          "evidence_ids": [
+            "demo1"
+          ],
+          "hard": false
+        },
+        {
+          "label": "Analytical tools",
+          "weight": 2,
+          "assessment": "partial",
+          "evidence_ids": [
+            "demo2"
+          ],
+          "hard": false
+        },
+        {
+          "label": "Work authorization",
+          "weight": 1,
+          "assessment": "unknown",
+          "evidence_ids": [],
+          "hard": true
+        }
+      ],
+      "cv": "EXAMPLE CANDIDATE\n\nResearch and analytical projects\nConducted five interviews and built a spreadsheet dashboard.",
+      "letter": "Dear hiring team,\n\nMy student project experience includes user interviews and dashboard work. I would welcome a discussion about the Junior Innovation Analyst role.\n\nExample Candidate"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>luna.europe · Your next chapter</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">luna<span>.europe</span></a>
+      <nav>
+        <a href="/">Your opportunities</a
+        ><a href="/architecture.html">Inside the system ↗</a
+        ><span class="pill">PRIVATE WORKSPACE</span>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">EVIDENCE → POSSIBILITY → YOUR DECISION</p>
+          <h1>Your experience.<br /><em>A world of possibilities.</em></h1>
+          <p class="intro">
+            Explore where your strengths can take you. See the evidence,
+            understand the gaps, and make each application your own.
+          </p>
+        </div>
+        <aside>
+          <span class="orbit">◎</span>
+          <p>1 code, 1000 pictures,<br />or stories.</p>
+          <small>Human choice at the centre.</small>
+        </aside>
+      </section>
+      <section class="metrics" id="metrics"></section>
+      <details class="notice">
+        <summary>Source reconciliation & things to confirm</summary>
+        <ul id="warnings"></ul>
+      </details>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">YOUR NEXT CHAPTER</p>
+          <h2>Opportunities worth exploring</h2>
+        </div>
+        <label
+          >Search roles<input id="filter" placeholder="Company, place, role…"
+        /></label>
+      </div>
+      <div id="jobs" class="jobs"></div>
+      <section class="lab">
+        <h2>Try your own evidence</h2>
+        <p>
+          The open API accepts explicit assessments and source references. Paste
+          a JSON payload to inspect the calculation.
+        </p>
+        <label for="payload">Evidence and requirements JSON</label
+        ><textarea id="payload" rows="8"></textarea
+        ><button id="calculate">Explain my match</button>
+        <pre id="result"></pre>
+      </section>
+      <footer>
+        luna.europe · A first public matching experiment · Free local software ·
+        No applications sent by this workspace.<br />Evidence scores are not
+        hiring probabilities. No personal data is sent for model training.
+      </footer>
+    </main>
+    <dialog id="review">
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow" id="doc-meta"></p>
+          <h2 id="doc-title"></h2>
+        </div>
+        <button id="close" aria-label="Close review">×</button>
+      </div>
+      <p id="doc-state"></p>
+      <div class="tabs">
+        <button id="tab-cv">CV</button
+        ><button id="tab-letter">Motivation letter</button
+        ><button id="print">Print / Save PDF</button
+        ><button id="download">Download text</button>
+      </div>
+      <article id="paper" class="paper"></article>
+      <section id="edit-panel" hidden>
+        <label for="editor">Edit the document directly</label
+        ><textarea id="editor" rows="18"></textarea
+        ><button id="save">Save revised draft</button
+        ><label for="instruction">Or describe a change for your agent</label
+        ><textarea
+          id="instruction"
+          rows="3"
+          placeholder="Describe what you want changed. This is queued locally for your agent."
+        ></textarea
+        ><button id="rewrite" hidden>Apply with local AI</button
+        ><button id="request">Save change request</button>
+        <p>
+          Freeform requests wait for an agent to revise the draft. Direct edits
+          update immediately.
+        </p>
+      </section>
+      <div class="approval">
+        <label
+          ><input type="checkbox" id="facts" /> I have checked the facts, dates
+          and wording in this version.</label
+        >
+        <div>
+          <button id="change" class="secondary">Change it</button
+          ><button id="approve">Take it / Approve</button>
+        </div>
+      </div>
+      <p id="message" role="status"></p>
+    </dialog>
+    <script src="/app.js"></script>
+  </body>
+</html>
